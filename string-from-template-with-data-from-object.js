@@ -47,7 +47,7 @@
                  if(key[1] === 'id')
                      id = object[key[1]]
                  const templateValue = key[1].trim();
-                 result = result.replace(new RegExp(key[0], "gi"), this.replaceAll(object[key[1]].toString(), ' ', `%${id}`));
+                 result = result.replace(new RegExp(key[0], "gi"), this.replaceAll(object[templateValue].toString(), ' ', `%${id}`));
              }
          }
          
